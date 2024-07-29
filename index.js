@@ -3,7 +3,7 @@ const pdfUrl = "./pdf-files/annotation.pdf"
 
 const canvas = document.getElementById("pdf-canvas")
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = "./pdfjs/pdf.worker.js"
+pdfjsLib.GlobalWorkerOptions.workerSrc = "./pdfjs/pdf.worker.mjs"
 
 // Load the PDF file using PDF.js
 pdfjsLib.getDocument(pdfUrl).promise.then(function (pdfDoc) {
