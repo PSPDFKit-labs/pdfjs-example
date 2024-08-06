@@ -5,10 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Complete Guide to PDF.js</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- canvas to place the PDF -->
-    <canvas id="pdf-canvas"></canvas>
+   <!-- Toolbar with custom buttons -->
+    <div class="controls">
+      <button id="prev-page" class="btn" title="Previous Page">Previous Page</button>
+      <button id="next-page" class="btn" title="Next Page">Next Page</button>
+      <button id="zoom-in" class="btn"  title="Zoom In">Zoom In</button>
+      <button id="zoom-out" class="btn" title="Zoom Out">Zoom Out</button>
+    </div>
+     <!-- canvas to place the PDF -->
+     <div id="pdf-container">
+       <canvas id="pdf-canvas"></canvas>
+     </div>
     <script src="./pdfjs/pdf.mjs" type="module" ></script>
     <script src="./index.js" type="module"></script>
   </body>
